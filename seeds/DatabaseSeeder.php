@@ -25,8 +25,8 @@ class DatabaseSeeder extends Seeder
 
 
             DB::table('role_user')->insert([
-                'user_id' => $user->id,
-                'role_id' => $role->id
+                'user_id' => rand(1,50),
+                'role_id' => rand(0,50)
             ]);
 
 
